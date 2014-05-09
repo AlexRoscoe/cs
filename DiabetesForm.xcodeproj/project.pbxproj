@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED35397A191D69CC00B72B22 /* Model.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = ED353979191D69CC00B72B22 /* Model.xcdatamodel */; };
 		EDE92A4D191D68D7002298DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE92A4C191D68D7002298DF /* Foundation.framework */; };
 		EDE92A4F191D68D7002298DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE92A4E191D68D7002298DF /* CoreGraphics.framework */; };
 		EDE92A51191D68D7002298DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE92A50191D68D7002298DF /* UIKit.framework */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED353979191D69CC00B72B22 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		EDE92A49191D68D7002298DF /* DiabetesForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiabetesForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE92A4C191D68D7002298DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EDE92A4E191D68D7002298DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -112,9 +114,8 @@
 		EDE92A52191D68D7002298DF /* DiabetesForm */ = {
 			isa = PBXGroup;
 			children = (
-				EDE92A5B191D68D7002298DF /* AppDelegate.h */,
-				EDE92A5C191D68D7002298DF /* AppDelegate.m */,
 				EDE92A5E191D68D7002298DF /* Main.storyboard */,
+				ED353979191D69CC00B72B22 /* Model.xcdatamodel */,
 				EDE92A61191D68D7002298DF /* ViewController.h */,
 				EDE92A62191D68D7002298DF /* ViewController.m */,
 				EDE92A64191D68D7002298DF /* Images.xcassets */,
@@ -126,6 +127,8 @@
 		EDE92A53191D68D7002298DF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EDE92A5B191D68D7002298DF /* AppDelegate.h */,
+				EDE92A5C191D68D7002298DF /* AppDelegate.m */,
 				EDE92A54191D68D7002298DF /* DiabetesForm-Info.plist */,
 				EDE92A55191D68D7002298DF /* InfoPlist.strings */,
 				EDE92A58191D68D7002298DF /* main.m */,
@@ -251,6 +254,7 @@
 			files = (
 				EDE92A63191D68D7002298DF /* ViewController.m in Sources */,
 				EDE92A5D191D68D7002298DF /* AppDelegate.m in Sources */,
+				ED35397A191D69CC00B72B22 /* Model.xcdatamodel in Sources */,
 				EDE92A59191D68D7002298DF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +462,7 @@
 				EDE92A7D191D68D8002298DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EDE92A7E191D68D8002298DF /* Build configuration list for PBXNativeTarget "DiabetesFormTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +471,7 @@
 				EDE92A80191D68D8002298DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
