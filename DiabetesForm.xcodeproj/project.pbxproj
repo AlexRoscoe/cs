@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ED35397A191D69CC00B72B22 /* Model.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = ED353979191D69CC00B72B22 /* Model.xcdatamodel */; };
+		ED3916AA1921388B004D7DE7 /* InitiationFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3916A91921388B004D7DE7 /* InitiationFormViewController.m */; };
 		EDE92A4D191D68D7002298DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE92A4C191D68D7002298DF /* Foundation.framework */; };
 		EDE92A4F191D68D7002298DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE92A4E191D68D7002298DF /* CoreGraphics.framework */; };
 		EDE92A51191D68D7002298DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE92A50191D68D7002298DF /* UIKit.framework */; };
@@ -36,6 +37,8 @@
 
 /* Begin PBXFileReference section */
 		ED353979191D69CC00B72B22 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		ED3916A81921388B004D7DE7 /* InitiationFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitiationFormViewController.h; sourceTree = "<group>"; };
+		ED3916A91921388B004D7DE7 /* InitiationFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitiationFormViewController.m; sourceTree = "<group>"; };
 		EDE92A49191D68D7002298DF /* DiabetesForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiabetesForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE92A4C191D68D7002298DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EDE92A4E191D68D7002298DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -115,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				EDE92A5E191D68D7002298DF /* Main.storyboard */,
+				ED3916A81921388B004D7DE7 /* InitiationFormViewController.h */,
+				ED3916A91921388B004D7DE7 /* InitiationFormViewController.m */,
 				ED353979191D69CC00B72B22 /* Model.xcdatamodel */,
 				EDE92A61191D68D7002298DF /* ViewController.h */,
 				EDE92A62191D68D7002298DF /* ViewController.m */,
@@ -252,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED3916AA1921388B004D7DE7 /* InitiationFormViewController.m in Sources */,
 				EDE92A63191D68D7002298DF /* ViewController.m in Sources */,
 				EDE92A5D191D68D7002298DF /* AppDelegate.m in Sources */,
 				ED35397A191D69CC00B72B22 /* Model.xcdatamodel in Sources */,
