@@ -1,20 +1,21 @@
 //
-//  FormHeaderView.m
+//  HeaderView.m
 //  DiabetesForm
 //
 //  Created by Alex Roscoe on 2014-05-15.
 //  Copyright (c) 2014 Garage Band Complex. All rights reserved.
 //
 
-#import "FormHeaderView.h"
+#import "HeaderView.h"
+#import "Constants.h"
 
-@interface FormHeaderView()
+@interface HeaderView()
 @property (strong, nonatomic) UILabel *titleLabel;
 @property (strong, nonatomic) UILabel *patientNameLabel;
 @property (strong, nonatomic) UILabel *dateLabel;
 @end
 
-@implementation FormHeaderView
+@implementation HeaderView
 
 #pragma mark - Initialization
 
@@ -23,7 +24,6 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        float SPACING = frame.size.height/4;
         
         self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0,
                                                                    0,

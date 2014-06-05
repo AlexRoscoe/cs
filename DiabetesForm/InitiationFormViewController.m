@@ -3,13 +3,13 @@
 //  DiabetesForm
 //
 //  Created by Alex Roscoe on 2014-05-12.
-//  Copyright (c) 2014 Garage Bane Complex. All rights reserved.
+//  Copyright (c) 2014 Garage Band Complex. All rights reserved.
 //
 
 #import "InitiationFormViewController.h"
 #import "InitiationForm.h"
-#import "FormHeaderView.h"
-#import "FormSectionView.h"
+#import "HeaderView.h"
+#import "SectionView.h"
 
 @interface InitiationFormViewController ()
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -53,28 +53,30 @@
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
     
     // Add Header
-    FormHeaderView *headerView = [[FormHeaderView alloc] initWithFrame:CGRectMake(MARGIN,
-                                                                                  SPACING,
-                                                                                  (self.formView.frame.size.width - MARGIN),
-                                                                                  100)];
+    HeaderView *headerView = [[HeaderView alloc] initWithFrame:CGRectMake(MARGIN,
+                                                                          SPACING,
+                                                                          self.formView.frame.size.width - MARGIN,
+                                                                          100)];
     [self.formView addSubview:headerView];
     
     headerView.title = [dict valueForKeyPath:INITIATION_FORM_TITLE];
     headerView.patientName = [dict valueForKeyPath:INITIATION_FORM_PATIENT_NAME];
     headerView.date = [dict valueForKeyPath:INITIATION_FORM_DATE];
     
-    UIView *previousView = headerView;
+    float height = headerView.frame.origin.y + headerView.frame.size.height; // current location to start drawing next view.
     // Add Sections
     NSArray *sections = [dict valueForKeyPath:INITIATION_FORM_SECTIONS];
     for (int i = 0; i < sections.count; i++) {
-        FormSectionView *sectionView = [[FormSectionView alloc] initWithFrame:CGRectMake(MARGIN,
-                                                                                        previousView.frame.origin.y + previousView.frame.size.height + SPACING,
-                                                                                        self.formView.frame.size.width,
-                                                                                        100)];
-        sectionView.sectionName = [sections[i] valueForKeyPath:INITIATION_FORM_SECTION_NAME];
-        sectionView.questions = [sections[i] valueForKeyPath:INITIATION_FORM_SECTION_QUESTIONS];
+        SectionView *sectionView = [[SectionView alloc] initWithFrame:CGRectMake(MARGIN,
+                                                                                 height,
+                                                                                 self.formView.frame.size.width - MARGIN,
+                                                                                 0)
+                                                                 name:[sections[i] valueForKeyPath:INITIATION_FORM_SECTION_NAME]
+                                                            questions:[sections[i] valueForKeyPath:INITIATION_FORM_SECTION_QUESTIONS]
+                                                             comments:[sections[i] valueForKeyPath:INITIATION_FORM_SECTION_COMMENTS]];
+        
         [self.formView addSubview:sectionView];
-        previousView = sectionView; 
+        height += [sectionView resize] + SPACING;
     }
 }
 

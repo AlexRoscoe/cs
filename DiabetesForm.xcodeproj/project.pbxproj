@@ -8,10 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		ED2900B319252F5800F08C81 /* initiationForm.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED2900B219252F5800F08C81 /* initiationForm.plist */; };
-		ED2900B819253E0E00F08C81 /* FormHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2900B719253E0E00F08C81 /* FormHeaderView.m */; };
-		ED2900BC192657FE00F08C81 /* FormSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2900BB192657FE00F08C81 /* FormSectionView.m */; };
+		ED2900B819253E0E00F08C81 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2900B719253E0E00F08C81 /* HeaderView.m */; };
+		ED2900BC192657FE00F08C81 /* SectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2900BB192657FE00F08C81 /* SectionView.m */; };
 		ED35397A191D69CC00B72B22 /* Model.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = ED353979191D69CC00B72B22 /* Model.xcdatamodel */; };
 		ED3916AA1921388B004D7DE7 /* InitiationFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3916A91921388B004D7DE7 /* InitiationFormViewController.m */; };
+		EDE40637193F875E0045ADF5 /* Grid.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE40636193F875E0045ADF5 /* Grid.m */; };
+		EDE4063B1940D87D0045ADF5 /* CheckAndLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE4063A1940D87D0045ADF5 /* CheckAndLabelView.m */; };
+		EDE4063E1940DFCB0045ADF5 /* CommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE4063D1940DFCB0045ADF5 /* CommentView.m */; };
+		EDE406411940E1180045ADF5 /* FormElement.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE406401940E1180045ADF5 /* FormElement.m */; };
+		EDE406461940E6380045ADF5 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE406451940E6380045ADF5 /* Constants.m */; };
+		EDE406491940EFE40045ADF5 /* QuestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE406481940EFE40045ADF5 /* QuestionView.m */; };
 		EDE92A4D191D68D7002298DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE92A4C191D68D7002298DF /* Foundation.framework */; };
 		EDE92A4F191D68D7002298DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE92A4E191D68D7002298DF /* CoreGraphics.framework */; };
 		EDE92A51191D68D7002298DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE92A50191D68D7002298DF /* UIKit.framework */; };
@@ -41,13 +47,25 @@
 /* Begin PBXFileReference section */
 		ED2900B219252F5800F08C81 /* initiationForm.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = initiationForm.plist; sourceTree = "<group>"; };
 		ED2900B4192536F000F08C81 /* InitiationForm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InitiationForm.h; sourceTree = "<group>"; };
-		ED2900B619253E0E00F08C81 /* FormHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormHeaderView.h; sourceTree = "<group>"; };
-		ED2900B719253E0E00F08C81 /* FormHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormHeaderView.m; sourceTree = "<group>"; };
-		ED2900BA192657FE00F08C81 /* FormSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormSectionView.h; sourceTree = "<group>"; };
-		ED2900BB192657FE00F08C81 /* FormSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormSectionView.m; sourceTree = "<group>"; };
+		ED2900B619253E0E00F08C81 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		ED2900B719253E0E00F08C81 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		ED2900BA192657FE00F08C81 /* SectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionView.h; sourceTree = "<group>"; };
+		ED2900BB192657FE00F08C81 /* SectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionView.m; sourceTree = "<group>"; };
 		ED353979191D69CC00B72B22 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		ED3916A81921388B004D7DE7 /* InitiationFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitiationFormViewController.h; sourceTree = "<group>"; };
 		ED3916A91921388B004D7DE7 /* InitiationFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitiationFormViewController.m; sourceTree = "<group>"; };
+		EDE40635193F875E0045ADF5 /* Grid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Grid.h; path = "../../Stanford iOS Class/Matchismo/Matchismo/Grid/Grid.h"; sourceTree = "<group>"; };
+		EDE40636193F875E0045ADF5 /* Grid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Grid.m; path = "../../Stanford iOS Class/Matchismo/Matchismo/Grid/Grid.m"; sourceTree = "<group>"; };
+		EDE406391940D87D0045ADF5 /* CheckAndLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckAndLabelView.h; sourceTree = "<group>"; };
+		EDE4063A1940D87D0045ADF5 /* CheckAndLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckAndLabelView.m; sourceTree = "<group>"; };
+		EDE4063C1940DFCB0045ADF5 /* CommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentView.h; sourceTree = "<group>"; };
+		EDE4063D1940DFCB0045ADF5 /* CommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentView.m; sourceTree = "<group>"; };
+		EDE4063F1940E1180045ADF5 /* FormElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormElement.h; sourceTree = "<group>"; };
+		EDE406401940E1180045ADF5 /* FormElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormElement.m; sourceTree = "<group>"; };
+		EDE406441940E6380045ADF5 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../Constants.h; sourceTree = "<group>"; };
+		EDE406451940E6380045ADF5 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = ../Constants.m; sourceTree = "<group>"; };
+		EDE406471940EFE40045ADF5 /* QuestionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionView.h; sourceTree = "<group>"; };
+		EDE406481940EFE40045ADF5 /* QuestionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionView.m; sourceTree = "<group>"; };
 		EDE92A49191D68D7002298DF /* DiabetesForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiabetesForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE92A4C191D68D7002298DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EDE92A4E191D68D7002298DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -107,10 +125,18 @@
 		ED2900B919253E1700F08C81 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				ED2900B619253E0E00F08C81 /* FormHeaderView.h */,
-				ED2900B719253E0E00F08C81 /* FormHeaderView.m */,
-				ED2900BA192657FE00F08C81 /* FormSectionView.h */,
-				ED2900BB192657FE00F08C81 /* FormSectionView.m */,
+				EDE4063F1940E1180045ADF5 /* FormElement.h */,
+				EDE406401940E1180045ADF5 /* FormElement.m */,
+				ED2900B619253E0E00F08C81 /* HeaderView.h */,
+				ED2900B719253E0E00F08C81 /* HeaderView.m */,
+				ED2900BA192657FE00F08C81 /* SectionView.h */,
+				ED2900BB192657FE00F08C81 /* SectionView.m */,
+				EDE4063C1940DFCB0045ADF5 /* CommentView.h */,
+				EDE4063D1940DFCB0045ADF5 /* CommentView.m */,
+				EDE406471940EFE40045ADF5 /* QuestionView.h */,
+				EDE406481940EFE40045ADF5 /* QuestionView.m */,
+				EDE406391940D87D0045ADF5 /* CheckAndLabelView.h */,
+				EDE4063A1940D87D0045ADF5 /* CheckAndLabelView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -121,6 +147,15 @@
 				ED353979191D69CC00B72B22 /* Model.xcdatamodel */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		EDE40638193F87690045ADF5 /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				EDE40635193F875E0045ADF5 /* Grid.h */,
+				EDE40636193F875E0045ADF5 /* Grid.m */,
+			);
+			name = Grid;
 			sourceTree = "<group>";
 		};
 		EDE92A40191D68D7002298DF = {
@@ -157,6 +192,9 @@
 			isa = PBXGroup;
 			children = (
 				EDE92A5E191D68D7002298DF /* Main.storyboard */,
+				EDE406441940E6380045ADF5 /* Constants.h */,
+				EDE406451940E6380045ADF5 /* Constants.m */,
+				EDE40638193F87690045ADF5 /* Grid */,
 				ED2900B919253E1700F08C81 /* Views */,
 				ED2900B5192536F800F08C81 /* Forms */,
 				EDE92A61191D68D7002298DF /* ViewController.h */,
@@ -298,12 +336,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED3916AA1921388B004D7DE7 /* InitiationFormViewController.m in Sources */,
-				ED2900BC192657FE00F08C81 /* FormSectionView.m in Sources */,
+				ED2900BC192657FE00F08C81 /* SectionView.m in Sources */,
 				EDE92A63191D68D7002298DF /* ViewController.m in Sources */,
+				EDE4063B1940D87D0045ADF5 /* CheckAndLabelView.m in Sources */,
+				EDE4063E1940DFCB0045ADF5 /* CommentView.m in Sources */,
 				EDE92A5D191D68D7002298DF /* AppDelegate.m in Sources */,
-				ED2900B819253E0E00F08C81 /* FormHeaderView.m in Sources */,
+				ED2900B819253E0E00F08C81 /* HeaderView.m in Sources */,
 				ED35397A191D69CC00B72B22 /* Model.xcdatamodel in Sources */,
 				EDE92A59191D68D7002298DF /* main.m in Sources */,
+				EDE40637193F875E0045ADF5 /* Grid.m in Sources */,
+				EDE406411940E1180045ADF5 /* FormElement.m in Sources */,
+				EDE406461940E6380045ADF5 /* Constants.m in Sources */,
+				EDE406491940EFE40045ADF5 /* QuestionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

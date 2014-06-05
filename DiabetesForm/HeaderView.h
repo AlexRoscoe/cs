@@ -1,5 +1,5 @@
 //
-//  FormHeaderView.h
+//  HeaderView.h
 //  DiabetesForm
 //
 //  Created by Alex Roscoe on 2014-05-15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FormHeaderView : UIView
+@interface HeaderView : UIView
 
 @property (strong, nonatomic) NSString *title;
 @property (strong, nonatomic) NSDate *date;
